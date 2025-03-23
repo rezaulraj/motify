@@ -19,7 +19,7 @@ import { axiosInstance } from "@/lib/axios";
 import { useMusicStore } from "@/stores/useMusicStore";
 import { SelectContent } from "@radix-ui/react-select";
 import { Plus, Upload } from "lucide-react";
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import toast from "react-hot-toast";
 
 interface NewSong {

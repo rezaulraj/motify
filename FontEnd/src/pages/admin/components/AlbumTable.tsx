@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/table";
 import { useMusicStore } from "@/stores/useMusicStore";
 import { Calendar, Music, Trash2 } from "lucide-react";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 const AlbumTable = () => {
   const { albums, deleteAlbum, fetchAlbums } = useMusicStore();

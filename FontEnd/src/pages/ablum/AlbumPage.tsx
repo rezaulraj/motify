@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useMusicStore } from "@/stores/useMusicStore";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -149,7 +149,9 @@ const AlbumPage = () => {
                         </div>
 
                         <div className="flex items-center">
-                          {song.createdAt.split("T")[0]}
+                          {song?.createdAt
+                            ? song.createdAt.toISOString().split("T")[0]
+                            : "N/A"}
                         </div>
                         <div className="flex items-center">
                           {formatDuration(song.duration)}
