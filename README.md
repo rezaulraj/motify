@@ -1,10 +1,17 @@
 ## Motify as like as Spotify clone
-## how to install step by step
-# first install react-vite
-# then install taliwind css with vite
-# then install shadCn
-# if any dependancy then npm i
+// for the backend node and express js cloudinary , clark auth
+```
+cd backend
+npm init
+npm install
+npm run dev
+```
 
-## for backend npm init
-# install express ,mongodb ..
-# npm i
+// for frontend react js taliwind css shadCn vite
+```
+cd fontend
+npm install
+npm run dev
+```
+
+// note: if you not have node in system then install first 
